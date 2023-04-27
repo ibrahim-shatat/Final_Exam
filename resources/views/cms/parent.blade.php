@@ -240,54 +240,54 @@
                             </ul>
                         </li>
                         <li class="nav-header">Content Mangment</li>
-{{--
+
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-city"></i>
                                 <p>
-                                    Country
+                                    Company
                                     <i class="fas fa-angle-left right"></i>
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="{{ route('countries.index') }}" class="nav-link">
+                                    <a href="{{ route('companies.index') }}" class="nav-link">
                                         <i class=" nav-icon fas fa-list"></i>
                                         <p>Index</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('countries.create') }}" class="nav-link">
+                                    <a href="{{ route('companies.create') }}" class="nav-link">
                                         <i class="fas fa-plus-circle nav-icon"></i>
                                         <p>Create</p>
                                     </a>
                                 </li>
                             </ul>
-                        </li> --}}
-{{--
+                        </li>
+
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-building"></i>
                                 <p>
-                                    City
+                                    CompanyBranch
                                     <i class="fas fa-angle-left right"></i>
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="{{ route('cities.index') }}" class="nav-link">
+                                    <a href="{{ route('companybranches.index') }}" class="nav-link">
                                         <i class=" nav-icon fas fa-list"></i>
                                         <p>Index</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('cities.create') }}" class="nav-link">
+                                    <a href="{{ route('companybranches.create') }}" class="nav-link">
                                         <i class="fas fa-plus-circle nav-icon"></i>
                                         <p>Create</p>
                                     </a>
                                 </li>
                             </ul>
-                        </li> --}}
+                        </li>
                         <li class="nav-header">Settings</li>
                         <li class="nav-item">
                             <a href="https://adminlte.io/docs/3.1/" class="nav-link">

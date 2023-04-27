@@ -43,7 +43,15 @@ return [
         'admin'=>[
             'driver' => 'session',
             'provider' => 'admins', 
-        ]
+        ],
+        'company'=>[
+            'driver' => 'session',
+            'provider' => 'companies', 
+        ],
+        'companybranch'=>[
+            'driver' => 'session',
+            'provider' => 'companybranches', 
+        ],
     ],
 
     /*
@@ -71,6 +79,13 @@ return [
         'admins' => [
             'driver' => 'eloquent',
             'model' => App\Models\Admin::class,
+        ],
+        'companies' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Company::class,
+        ],'companybranches' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\CompanyBranch::class,
         ],
 
         // 'users' => [

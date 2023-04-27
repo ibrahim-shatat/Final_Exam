@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\AdminAuthController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CompanyBranchController;
+use App\Http\Controllers\CompanyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,4 +33,13 @@ Route::prefix('cms/admin')->middleware('auth:admin')->group(function () {
     Route::get('admins_recycle', [AdminController::class,'recycle'])->name('admins_recycle');
     Route::get('admins_restore/{id}', [AdminController::class,'restoreAdmin'])->name('admins_restore');
     Route::get('admins_delete/{id}', [AdminController::class,'force'])->name('admins_delete');
+
+    Route::resource('companies', CompanyController::class);
+    Route::post('companies_update/{id}',[CompanyController::class , 'update'])->name('companies_update');
+    Route::get('companies_recycle', [CompanyController::class,'recycle'])->name('companies_recycle');
+    Route::get('companies_restore/{id}', [CompanyController::class,'restoreAdmin'])->name('companies_restore');
+    Route::get('companies_delete/{id}', [CompanyController::class,'force'])->name('companies_delete');
+
+    Route::resource('companybranches', CompanyBranchController::class);
+    Route::post('companybranches_update/{id}',[CompanyBranchController::class , 'update'])->name('companybranches_update');
 });

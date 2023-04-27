@@ -38,7 +38,11 @@ class AdminAuthController extends Controller
         $guard = '';
         if (auth('admin')->check()){
             $guard = 'admin';
-        }    
+        }elseif(auth('company')->check()) {
+            $guard = 'company';
+        }else{
+            $guard = 'companybranch';
+        }  
        Auth::guard($guard)->logout();
        $request->session()->invalidate();
        return redirect()->route('view.login',$guard);
